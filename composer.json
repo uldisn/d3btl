@@ -1,0 +1,20 @@
+{
+    "name": "d3yii2/d3btl",
+    "description": "library for dealing with .btl files",
+    "type": "library",
+    "keywords": ["yii2", "BTL"],
+    "authors": [
+        {
+            "name": "Janis Vilums",
+            "email": "viljums@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "d3yii2/d3btl\\": ""
+        }
+    }
+}
