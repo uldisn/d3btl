@@ -19,7 +19,7 @@ use d3system\behaviors\D3DateTimeBehavior;
  * @property string $project_name
  * @property string $export_datetime
  *
- * @property \poker\sharkability\models\BtlPart[] $btlParts
+ * @property \d3yii2\d3btl\models\BtlPart[] $btlParts
  * @property string $aliasModel
  */
 abstract class BtlFileData extends \yii\db\ActiveRecord
@@ -98,7 +98,7 @@ abstract class BtlFileData extends \yii\db\ActiveRecord
      */
     public function getBtlParts()
     {
-        return $this->hasMany(\poker\sharkability\models\BtlPart::className(), ['file_data_id' => 'id']);
+        return $this->hasMany(\d3yii2\d3btl\models\BtlPart::className(), ['file_data_id' => 'id']);
     }
 
 
